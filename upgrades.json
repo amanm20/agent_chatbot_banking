@@ -1,0 +1,28 @@
+{
+    "CUST-0001": {
+      "current_tier": "Standard",
+      "options": [
+        {
+          "name": "Premier Checking",
+          "fee": 15,
+          "benefit": "no monthly fee, unlimited ATM rebates"
+        },
+        {
+          "name": "VIP Savings",
+          "fee": 25,
+          "benefit": "2.0% APY on all balances"
+        }
+      ]
+    },
+    "CUST-0002": {
+      "current_tier": "Basic",
+      "options": [
+        {
+          "name": "Enhanced Basic",
+          "fee": 5,
+          "benefit": "waived $2 ATM fee monthly"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,16 @@
+from pathlib import Path
+from .bedrock_client import generate_text, embed_text
+from .utils.faiss_index import load_faiss
+
+INDEX, DOCS = load_faiss("data/policies")
+
+def retrieve_policy(query: str, k:int=3) -> str:
+    q_emb = embed_text(query)
+    idxs, _ = INDEX.search(q_emb, k)
+    chunks = [DOCS[i] for i in idxs[0]]
+    prompt = (
+      "You are a banking assistant. Use ONLY these excerpts:\n\n"
+      + "\n---\n".join(chunks)
+      + f"\n\nQ: {query}\nA:"
+    )
+    return generate_text(prompt)

@@ -1,0 +1,17 @@
+[
+    {
+      "customer_id": "CUST-0001",
+      "name": "Aman Mehra",
+      "account_ids": ["ACC-1001", "ACC-1002"],
+      "avg_balance": 15000,
+      "monthly_spend": 3200
+    },
+    {
+      "customer_id": "CUST-0002",
+      "name": "Jane Doe",
+      "account_ids": ["ACC-2001", "ACC-2002"],
+      "avg_balance": 2500,
+      "monthly_spend": 900
+    }
+  ]
+  
